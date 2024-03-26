@@ -38,6 +38,7 @@ dependencies:
   syncfusion_flutter_calendar: ^22.2.12
   one_clock: ^2.0.0
   flutter_launcher_icons: ^0.9.0
+  clock_loader: ^0.0.3
 
 flutter_icons:
   android: true
