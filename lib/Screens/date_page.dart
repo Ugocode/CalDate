@@ -47,12 +47,14 @@ class _DatePageState extends State<DatePage> {
           ),
           Padding(
             padding: const EdgeInsets.all(8.0),
-            child: SfCalendar(
-              view: CalendarView.day,
-              controller: _controller,
-              headerStyle: CalendarHeaderStyle(
-                  textStyle: const TextStyle(color: Colors.white),
-                  backgroundColor: Colors.amber[900]),
+            child: Card(
+              child: SfCalendar(
+                view: CalendarView.day,
+                controller: _controller,
+                headerStyle: CalendarHeaderStyle(
+                    textStyle: const TextStyle(color: Colors.white),
+                    backgroundColor: Colors.amber[900]),
+              ),
             ),
           ),
           const SizedBox(
@@ -69,22 +71,18 @@ class _DatePageState extends State<DatePage> {
             height: 5,
           ),
           Padding(
-            padding: const EdgeInsets.symmetric(horizontal: 30.0),
+            padding: const EdgeInsets.all(8.0),
             child: Card(
               elevation: 4,
               color: Colors.blue,
               child: Padding(
                 padding: const EdgeInsets.all(8.0),
-                child: SizedBox(
-                  height: 240,
-                  width: 460,
-                  child: SfCalendar(
-                    view: CalendarView.month,
-                    //controller: _controller,
-                    headerStyle: CalendarHeaderStyle(
-                        textStyle: const TextStyle(color: Colors.white),
-                        backgroundColor: Colors.amber[900]),
-                  ),
+                child: SfCalendar(
+                  view: CalendarView.month,
+                  //controller: _controller,
+                  headerStyle: CalendarHeaderStyle(
+                      textStyle: const TextStyle(color: Colors.white),
+                      backgroundColor: Colors.amber[900]),
                 ),
               ),
             ),
