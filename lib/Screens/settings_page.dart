@@ -1,3 +1,5 @@
+import 'package:date_clock/Screens/clock_type.dart';
+import 'package:date_clock/Screens/date_format.dart';
 import 'package:flutter/material.dart';
 
 class SettingsPage extends StatefulWidget {
@@ -23,11 +25,11 @@ class _SettingsPageState extends State<SettingsPage> {
           const SizedBox(
             height: 20,
           ),
-          const Center(
+          Center(
             child: CircleAvatar(
-              radius: 60,
-              backgroundColor: Colors.amber,
-              backgroundImage: AssetImage('assets/icons/Logo.png'),
+              radius: 70,
+              backgroundColor: Colors.amber[700],
+              backgroundImage: const AssetImage('assets/icons/Logo.png'),
             ),
           ),
           const SizedBox(
@@ -35,15 +37,28 @@ class _SettingsPageState extends State<SettingsPage> {
           ),
           Padding(
             padding: const EdgeInsets.all(8.0),
-            child: Container(
-              height: 60,
-              width: 280,
-              color: Colors.grey[350],
-              child: const Padding(
-                padding: EdgeInsets.all(12.0),
-                child: Text(
-                  'Clock Type',
-                  style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20),
+            child: GestureDetector(
+              onTap: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => const ClockType()),
+                );
+              },
+              child: Card(
+                child: Container(
+                  height: 60,
+                  width: 280,
+                  decoration: BoxDecoration(
+                      color: Colors.grey[350],
+                      borderRadius: BorderRadius.circular(10)),
+                  child: const Padding(
+                    padding: EdgeInsets.all(12.0),
+                    child: Text(
+                      'Clock type',
+                      style:
+                          TextStyle(fontWeight: FontWeight.bold, fontSize: 20),
+                    ),
+                  ),
                 ),
               ),
             ),
@@ -53,21 +68,34 @@ class _SettingsPageState extends State<SettingsPage> {
           ),
           Padding(
             padding: const EdgeInsets.all(8.0),
-            child: Container(
-              height: 60,
-              width: 280,
-              color: Colors.grey[350],
-              child: const Padding(
-                padding: EdgeInsets.all(12.0),
-                child: Text(
-                  'Date Format',
-                  style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20),
+            child: GestureDetector(
+              onTap: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => const DateFormat()),
+                );
+              },
+              child: Card(
+                child: Container(
+                  height: 60,
+                  width: 280,
+                  decoration: BoxDecoration(
+                      color: Colors.grey[350],
+                      borderRadius: BorderRadius.circular(10)),
+                  child: const Padding(
+                    padding: EdgeInsets.all(12.0),
+                    child: Text(
+                      'Date format',
+                      style:
+                          TextStyle(fontWeight: FontWeight.bold, fontSize: 20),
+                    ),
+                  ),
                 ),
               ),
             ),
           ),
           const Spacer(),
-          const Text('version 1.0.01')
+          const Text('version 1.0.02')
         ],
       ),
     );
