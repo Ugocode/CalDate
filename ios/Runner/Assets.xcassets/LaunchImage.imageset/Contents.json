@@ -1,17 +1,17 @@
 {
   "images" : [
     {
-      "filename" : "logo3 1.png",
+      "filename" : "vertLogo1.png",
       "idiom" : "iphone",
       "scale" : "1x"
     },
     {
-      "filename" : "logo2x.png",
+      "filename" : "vertLogo2.png",
       "idiom" : "iphone",
       "scale" : "2x"
     },
     {
-      "filename" : "logo3x.png",
+      "filename" : "vertLogo3.png",
       "idiom" : "iphone",
       "scale" : "3x"
     }
