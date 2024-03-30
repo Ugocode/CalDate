@@ -23,7 +23,7 @@ class _DatePageState extends State<DatePage> {
     return Scaffold(
       appBar: AppBar(
         title: Text(
-          'Date',
+          'Calendar',
           style:
               TextStyle(color: Colors.amber[900], fontWeight: FontWeight.bold),
         ),
