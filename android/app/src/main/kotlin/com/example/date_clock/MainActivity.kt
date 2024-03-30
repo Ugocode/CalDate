@@ -1,4 +1,4 @@
-package com.example.date_clock
+package com.example.cal_cloc
 
 import io.flutter.embedding.android.FlutterActivity
 

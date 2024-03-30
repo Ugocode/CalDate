@@ -13,7 +13,13 @@ class _DateFormatState extends State<DateFormat> {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.amber[100],
-      appBar: AppBar(),
+      appBar: AppBar(
+        title: Text(
+          'Calendar Views',
+          style: TextStyle(color: Colors.amber[900]),
+        ),
+        centerTitle: true,
+      ),
       body: ListView(
         children: [
           const SizedBox(

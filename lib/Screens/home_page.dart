@@ -24,22 +24,21 @@ class _HomePageState extends State<HomePage> {
           decoration: const BoxDecoration(
             // color: const Color(0xff7c94b6),
             image: DecorationImage(
-                image: AssetImage('assets/images/lion.jpeg'),
-                fit: BoxFit.cover),
+                image: AssetImage('assets/images/bkg.png'), fit: BoxFit.cover),
           ),
           child: Column(
             // crossAxisAlignment: CrossAxisAlignment.center,
             // mainAxisAlignment: MainAxisAlignment.center,
             children: [
               const Text(
-                'CalDate',
+                'CalCloc',
                 style: TextStyle(
                     color: Colors.white,
                     fontSize: 25,
                     fontWeight: FontWeight.bold),
               ),
               const SizedBox(
-                height: 20,
+                height: 30,
               ),
               Padding(
                 padding: const EdgeInsets.symmetric(

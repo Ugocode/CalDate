@@ -1,6 +1,6 @@
 {
-    "name": "date_clock",
-    "short_name": "date_clock",
+    "name": "cal_cloc",
+    "short_name": "cal_cloc",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",

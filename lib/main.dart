@@ -1,4 +1,4 @@
-import 'package:date_clock/Screens/navigation_screen.dart';
+import 'package:cal_cloc/Screens/navigation_screen.dart';
 import 'package:flutter/material.dart';
 
 void main() {
