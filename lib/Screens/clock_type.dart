@@ -1,4 +1,3 @@
-import 'package:clock_loader/clock_loader.dart';
 import 'package:flutter/material.dart';
 import 'package:one_clock/one_clock.dart';
 
@@ -15,58 +14,52 @@ class _ClockTypeState extends State<ClockType> {
     return Scaffold(
       backgroundColor: Colors.amber[100],
       appBar: AppBar(
-        title: const Text('Clock Type'),
+        title: Text(
+          'Clock type',
+          style: TextStyle(color: Colors.amber[900]),
+        ),
+        centerTitle: true,
       ),
       body: ListView(
-        children: [
-          const Padding(
+        children: const [
+          SizedBox(
+            height: 10,
+          ),
+          Padding(
             padding: EdgeInsets.all(8.0),
             child: Text('Analog Clock'),
           ),
-          const Padding(
+          Padding(
             padding: EdgeInsets.all(8.0),
             child: CircleAvatar(
               radius: 120,
               child: AnalogClock(),
             ),
           ),
-          const SizedBox(
+          SizedBox(
             height: 30,
           ),
-          const Padding(
+          Padding(
             padding: EdgeInsets.all(8.0),
             child: Text('Digital Clock'),
           ),
-          const Card(
-            child: SizedBox(
-              height: 50,
-              width: 150,
-              child: DigitalClock(),
-            ),
-          ),
-          const SizedBox(
-            height: 20,
-          ),
-          const Padding(
-            padding: EdgeInsets.all(8.0),
-            child: Text('Particle Clock'),
-          ),
           Padding(
-            padding: const EdgeInsets.only(left: 10.0),
-            child: CircleAvatar(
-              radius: 120,
-              child: Padding(
-                padding: const EdgeInsets.only(right: 45.0),
-                child: ClockLoader(
-                  clockLoaderModel: ClockLoaderModel(
-                    shapeOfParticles: ShapeOfParticlesEnum.circle,
-                    mainHandleColor: Colors.blue,
-                    particlesColor: Colors.blue,
-                  ),
-                ),
+            padding: EdgeInsets.symmetric(horizontal: 20.0),
+            child: Card(
+              child: SizedBox(
+                height: 50,
+                width: 150,
+                child: DigitalClock(),
               ),
             ),
-          )
+          ),
+          SizedBox(
+            height: 20,
+          ),
+          // Padding(
+          //   padding: EdgeInsets.all(8.0),
+          //   child: Text('Particle Clock'),
+          // ),
         ],
       ),
     );
